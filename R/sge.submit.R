@@ -29,7 +29,7 @@
     qsub.user.opt <- getOption("sge.user.options")
     qsub.options  <- getOption("sge.qsub.options")
     qsub.script   <- getOption("sge.script")
-    script <- paste(file.path(.path.package("Rsge"), qsub.script), fname)
+    script <- paste(file.path(path.package("Rsge"), qsub.script), fname)
     result <- system(paste(qsub, qsub.user.opt, qsub.options, script), intern = TRUE)
     if(debug) print(result)
     sge.fname <- paste(fname,".", getOption("sge.ret.ext"), sep="")

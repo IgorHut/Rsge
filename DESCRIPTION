@@ -5,7 +5,7 @@ Version: 0.6.3
 Author: Dan Bode <bodepd@yahoo.com>
 Description: This package provides functions for using R with the SGE
         cluster/grid queuing system.
-Depends: snow
+Depends: snow, R (>= 2.13.0)
 SystemRequirements: Requires SGE (qsub, qstat, optionally qacct)
 Maintainer: Dan Bode <bodepd@yahoo.com>
 License: LGPL

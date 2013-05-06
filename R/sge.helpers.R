@@ -38,7 +38,7 @@ sge.split <- function (x, ncl) {
 }
 
 sge.job.status <- function (jobid, qacct=getOption("sge.use.qacct")) {
-  system(paste(file.path(.path.package("Rsge"), getOption("sge.monitor.script")), jobid, qacct, getOption("sge.debug"), getOption("sge.qstat")), intern=FALSE)
+  system(paste(file.path(path.package("Rsge"), getOption("sge.monitor.script")), jobid, qacct, getOption("sge.debug"), getOption("sge.qstat")), intern=FALSE)
 }
 
 sge.checkNotNow <- function(result) {
