@@ -13,7 +13,6 @@ sge.system.tee(cmd, out = TRUE)
   \item{cmd}{The command to be executed}
   \item{out}{Flag whether the output of the command should be printed}
 }
-\details{}
 \value{Character vector containing the output of the command. Each
   element in the vector corresponds to one line of output.
 }

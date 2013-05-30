@@ -17,6 +17,5 @@ sge.save.dir()
 }
 \value{The temporary directory name}
 \author{Dan Bode}
-\examples{
-}
+
 \keyword{interface}

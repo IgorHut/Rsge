@@ -22,7 +22,4 @@ sge.split(x, ncl)
  
 \author{Dan Bode}
 
-\examples{
-
-}
 \keyword{interface}

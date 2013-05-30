@@ -6,13 +6,12 @@
 sge.checkNotNow(result)
 }
 \arguments{
-  \item{result}{result of qsub that is parsed.}
+  \item{result}{Output of qsub that is parsed.}
 }
-\details{}
-\value{}
+\value{\code{TRUE} if the job failed to run because \sQuote{-now} was specified but no free slots were available;
+\code{FALSE} otherwise.}
  
 \author{Dan Bode}
 
-\examples{
-}
+\keyword{internal}
 \keyword{interface}

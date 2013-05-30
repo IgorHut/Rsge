@@ -26,6 +26,4 @@ If qacct is set to "TRUE", then the program will return the return code of qacct
 
 \seealso{\code{\link[Rsge]{sge.submit}} \code{\link[Rsge]{sge.list.get.result}} }
 
-\examples{
-}
 \keyword{interface}
