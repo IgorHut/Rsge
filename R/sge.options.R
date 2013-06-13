@@ -6,7 +6,7 @@
 sge.setDefaultOptions <- function() {
   # user variables, feel free to change for more info help(sge.options)
   #if the cluster should be used or if it should be run locally.
-  options(sge.use.cluster="TRUE")
+  options(sge.use.cluster=TRUE)
   # default number of elements per split
   options(sge.block.size=100)
   #prefix for data files
