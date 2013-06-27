@@ -59,7 +59,7 @@ sge.ret <- try({
   for(package.name in rev(sge.packages))
     {
 	cat("loading package", package.name, "\n")
-	library(package.name, character.only=TRUE)
+	suppressPackageStartupMessages(library(package.name, character.only=TRUE))
 8   }
   if (exists("sge.sources"))
     for (source.name in sge.sources)
