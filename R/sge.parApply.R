@@ -272,7 +272,7 @@ sge.parParApply <- function (X, FUN, ...,
       print("Not running join method since there are errors")
       results
     } else {
-      retval <- docall(join.method, results)
+      retval <- do.call(join.method, results, quote=TRUE)
       retval
     }
   }
