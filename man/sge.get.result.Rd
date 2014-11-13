@@ -40,6 +40,4 @@ sge.list.get.result(list, ...)
 
 \seealso{\code{\link[Rsge]{sge.submit}} }
 
-\examples{
-}
 \keyword{interface}

@@ -1,7 +1,9 @@
-.First.lib <-  function(libname, pkgname) {
-  require(snow);
-  sge.setDefaultOptions();
-  cat(paste("\nWelcome to Rsge\n"));
-  cat(paste("    Version:", packageDescription(pkgname, field = "Version"), "\n\n"));
+.onLoad <-  function(libname, pkgname) {
+	sge.setDefaultOptions()
+}
+
+.onAttach <- function(libname, pkgname){
+	packageStartupMessage("\nWelcome to Rsge (Version: ", 
+			utils::packageDescription(pkgname, fields = "Version"), ")\n")
 }
 

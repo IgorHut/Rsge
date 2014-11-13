@@ -6,7 +6,7 @@
 sge.setDefaultOptions <- function() {
   # user variables, feel free to change for more info help(sge.options)
   #if the cluster should be used or if it should be run locally.
-  options(sge.use.cluster="TRUE")
+  options(sge.use.cluster=TRUE)
   # default number of elements per split
   options(sge.block.size=100)
   #prefix for data files
@@ -28,6 +28,8 @@ sge.setDefaultOptions <- function() {
   #logging levels, this will be replaced by something useful soon
   options(sge.debug=FALSE)
   options(sge.trace=TRUE)
+  # directory for temporary files (NULL means getwd())
+  options(sge.save.dir=NULL)
   # should we save the global environment by default.
   options(sge.save.global=FALSE)
   # global variables that should not be changed, or should be changed very carefully. 

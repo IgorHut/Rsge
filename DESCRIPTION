@@ -1,14 +1,11 @@
 Package: Rsge
 Title: Interface to the SGE Queuing System
-Date: 2009-5-14
-Version: 0.6.3
+Date: 2013-6-11
+Version: 0.6.5
 Author: Dan Bode <bodepd@yahoo.com>
 Description: This package provides functions for using R with the SGE
         cluster/grid queuing system.
-Depends: snow
+Depends: snow, R (>= 2.13.0)
 SystemRequirements: Requires SGE (qsub, qstat, optionally qacct)
-Maintainer: Dan Bode <bodepd@yahoo.com>
+Maintainer: Peter Humburg <humburg@well.ox.ac.uk>
 License: LGPL
-Packaged: 2012-10-29 08:57:38 UTC; ripley
-Repository: CRAN
-Date/Publication: 2012-10-29 08:57:38

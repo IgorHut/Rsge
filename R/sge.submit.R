@@ -4,6 +4,7 @@
                          global.savelist=NULL, 
                          function.savelist=NULL, 
                          packages=NULL,
+                         sources=NULL,
                          debug=getOption('sge.debug'),
                          file.prefix=getOption('sge.file.prefix')
                          )
@@ -16,6 +17,7 @@
                    global.savelist=global.savelist,
                    function.savelist=function.savelist,
                    sge.packages=packages,
+                   sge.sources=sources,
                    debug=debug,prefix=fname
                   )
     #sge.call <- as.call(list(func, ...) )
@@ -27,7 +29,7 @@
     qsub.user.opt <- getOption("sge.user.options")
     qsub.options  <- getOption("sge.qsub.options")
     qsub.script   <- getOption("sge.script")
-    script <- paste(file.path(.path.package("Rsge"), qsub.script), fname)
+    script <- paste(file.path(path.package("Rsge"), qsub.script), fname)
     result <- system(paste(qsub, qsub.user.opt, qsub.options, script), intern = TRUE)
     if(debug) print(result)
     sge.fname <- paste(fname,".", getOption("sge.ret.ext"), sep="")
